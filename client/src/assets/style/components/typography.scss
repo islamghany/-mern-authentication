@@ -1,0 +1,75 @@
+
+
+// typography
+
+//fonts
+
+//<link href="https://fonts.googleapis.com/css?family=Amiri|Baloo+2|Cairo|Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+
+$amiri: 'Amiri', serif;
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$baloo: 'Baloo 2', cursive;
+$cairo: 'Cairo', sans-serif;
+$lato: 'Lato', sans-serif;
+$releway: 'Raleway', sans-serif;
+
+h1 , h2 ,h3 ,h4,h5,h6,p{
+  font-weight:300;
+  color:#2C2C2C;
+  line-height:1.5;
+  font-family: $releway;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0.35em;
+}
+ h1 {
+    font-size: 5.3rem; // 53 px
+    line-height: 1.69;
+    font-weight: bolder;
+}
+h2{
+      font-size: 3.25rem; // 30 px
+      font-weight: 700;
+}
+h3{
+  font-size: 2.5rem; //25 px
+  font-weight: 400;
+}
+h4{
+  font-size: 1.8rem; // 18 px
+}
+h5{
+  font-size: 1.6rem; // 17px
+  line-height: 1.4;
+}
+h6{
+      font-size: 1.3rem; // 12
+     text-transform: uppercase;
+     font-weight: 500;
+}
+p{
+  margin:.8rem 0;
+  font-size:1.5rem; //15px;
+  .sub{
+
+  }
+}
+
+// colors
+
+.primary{
+  color:$primary !important;
+}
+.danger{
+  color:$danger !important;
+}
+.success{
+  color:$success !important;
+}
+.link{
+    color:$link !important;
+
+}
+
+

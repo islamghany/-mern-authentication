@@ -1,0 +1,109 @@
+.grid{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    //justify-content: space-between;
+    &__img{
+        flex: 0 1 60%;
+        @include flex();
+        svg{
+           width:40rem;
+
+            @include respond(660px){
+                padding-top: 2rem;
+        width: 30rem;
+    }
+        }
+    }
+    @include respond(660px){
+        flex-direction: column
+    }
+}
+.form{
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+    flex:1;
+    @include respond(660px){
+       
+        padding: 2rem 4rem;
+    }
+	&__body{
+     padding-top: 3rem;
+     padding-right: 3rem;
+      width:40rem; 
+		  @include respond(660px){
+        width: 100%;
+        padding-right:0;
+        
+    }
+    h4{
+            border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: 'lato';
+    padding: 2rem 2rem 2rem .8rem;
+    background: #87baff;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+        }
+	}
+	form{
+		.btn{
+			padding: 1rem 4rem !important; 
+			margin-top: 0;
+		}
+	}
+	&__unit{
+		&:not(:last-child){
+			margin-bottom: 1rem;
+		}
+
+	}
+    &__alt{
+        margin-top: 2rem;
+        p{
+            font-family: 'lato';
+            font-size: 1.4rem;
+            text-transform: capitalize;
+              .plink{
+                font-size: 1.4rem;
+            color: #8BA2B9;
+            text-decoration: underline;
+            margin-left: .8rem;
+              }       
+        }
+    }
+    &__forget{
+    	p{
+            font-family: 'lato';
+            font-size: 1.4rem;
+            color: #8BA2B9;
+            text-decoration: underline;
+        }
+    }
+    &__input{
+    	width: 100%;
+    	border:1px solid transparent;
+    	line-height: 28px;
+    	padding:.8rem 1.6rem;
+    	font-size:1.6rem;
+    	border-radius: .4rem;
+    	color:#696969;
+    	font-weight: 400;
+    	font-family: 'Roboto';
+    	transition: all .3s ease;
+    	background: #FAFAFA;
+        &::placeholder{
+            color:#968e8e;
+        }
+    	&:hover{
+    		border:1px solid #babfc9;
+    	}
+    	&:focus{
+    		border:1px solid $primary;
+    		background: #fff;
+    	}
+
+    }
+}
