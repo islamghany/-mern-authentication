@@ -1,0 +1,103 @@
+$primary:#007BFF;
+$danger:#c4183c;
+$warning:#E6A200;
+$success:#14AF64;
+$bg:#F2F4F6;
+body{
+    background: $bg !important;
+}
+a{
+	text-decoration: none !important;
+    color:inherit;
+}
+.icon__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-page{
+	display: flex;
+	flex-direction: column;
+	min-height:100vh;
+}
+
+.nav{
+    background: #fff !important;
+    padding: 0 1rem;
+    height:72px;
+	&__brand{
+		color:$primary !important;
+	}
+    &__body{
+        flex:1;
+    }
+    &__right{
+        align-self: stretch;
+    }
+	&__list{
+		color:#eee !important;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        :not(:last-child){
+            margin-right:10px;
+        }
+	}
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+@keyframes bouncing-loader {
+    to {
+        opacity: 0.1;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: $primary;
+    border-radius: 50%;
+    animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    content: " ";
+}
+
+.bouncingLoader > div {
+    margin: 0 5px;
+}
+
+.bouncingLoader > div {
+    animation-delay: 0.2s;
+}
+
+.bouncingLoader:after {
+    animation-delay: 0.4s;
+}
+.inline-block{
+  display: inline-block !important; 
+}
+.flex{
+  display: flex !important; 
+  align-items: center !important
+}
+
+.height{
+  height: 100% !important;
+}
+.white{
+  color:#fff !important;
+}
+@import './modal.scss';
+@import './form.scss';

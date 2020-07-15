@@ -1,0 +1,45 @@
+.form{
+	flex:1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: 4rem 0;
+   &__container{
+   	 padding:2rem  3rem;
+   	 border-radius: 1.5rem;
+       background: #fff;   
+   	 width:500px;	
+   	 box-shadow: rgba(17, 31, 93, 0.08) 3px 0px 30px, rgba(27, 27, 43, 0.09) 2px 0px 5px;
+   }
+   &__unit{
+   	margin-bottom:1rem;
+   }
+   &__error{
+   	color:#c4183c;
+   	text-transform: capitalize;
+   	font-size:14px;
+   }
+   &__heading{
+      color:#333;
+      font-size:14px;
+      padding-left: 10px;
+      border-left:4px solid $warning;
+   }
+    &__success{
+      color:#333;
+      font-size:14px;
+      padding-left: 10px;
+      border-left:4px solid $success;
+   }
+   &__row-end{
+      text-align: right;
+      padding: 10px;
+      a{
+         transition: color .3s;
+         cursor:pointer; 
+         &:hover{
+            color:$primary;
+         }
+      }
+   }
+}
